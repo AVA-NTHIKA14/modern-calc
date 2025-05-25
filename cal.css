@@ -1,0 +1,104 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #f1f1f1;
+  gap: 20px;
+}
+
+.calculator {
+  background: linear-gradient(135deg, #000000, #000000);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 320px;
+}
+
+.display {
+  background: #f4ebebf9;
+  color: #000000;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  text-align: right;
+  margin-bottom: 20px;
+  box-shadow: inset 0 4px 8px rgba(44, 35, 148, 0.883);
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.display::-webkit-scrollbar {
+  display: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background: #2272d3;
+  box-shadow: 5px 5px 15px #000000, -5px -5px 15px #0c1a48;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  color: white;
+}
+
+button:active {
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+button.operator {
+  background: linear-gradient(#3f6e95);
+  color: #fffefe;
+}
+
+button.equal {
+  background: #aeb4cd;
+  color: rgb(0, 0, 0);
+}
+
+button.ac {
+  background: #bb2523;
+  color: white;
+}
+
+.history-container {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  width: 250px;
+  height: 400px;
+  overflow-y: auto;
+  display: none;
+}
+
+.history-container h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #000;
+  text-align: center;
+}
+
+#historyList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+#historyList li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
