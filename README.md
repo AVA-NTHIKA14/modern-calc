@@ -1,14 +1,4 @@
 🧮 Modern Calculator
-A sleek and modern calculator built using HTML, CSS, and JavaScript with support for:
-
-Real-time arithmetic calculations
-
-Clear and backspace buttons
-
-Calculation history panel
-
-Clean, mobile-friendly UI 🎨
-
 
 
 ✨ Features
